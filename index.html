@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>домашняя запросы</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>POST Request Form</title>
+    <title>User List</title>
+    <title>Error Handling with API</title>
+    <title>API Refresh</title>
+</head>
+<body>
+   <h2>POST</h2>
+   <form id="postForm">
+      <label for="title">Заголовок:</label>
+      <br>
+      <input type="text" id="title" name="title" required>
+      <br>
+      <label for="body">Текст:</label>
+      <br>
+      <textarea id="body" name="body" required></textarea>
+      <br>
+      <button type="button" onclick="submitForm()">Отправить</button>
+  </form>
+
+<br>
+   <h3>Список</h3>
+   <ul id="userList"></ul>
+
+   <br><br>
+   <h4>Информация про ошибку</h4>
+   <div id="errorContainer" style="display: none;">
+      <p id="errorMessage"></p>
+  </div>
+
+  <button onclick="getData()">Получить данные</button>
+
+  <br> <br> <br>
+  <div id="dataContainer"></div>
+
+
+
+    
+ <script src="index.js"></script>
+ <!-- <script src="script 1.js"></script> -->
+</body>
+</html>
